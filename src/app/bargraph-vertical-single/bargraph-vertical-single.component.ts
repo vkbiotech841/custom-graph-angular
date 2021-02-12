@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bargraph-vertical-single',
@@ -7,37 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BargraphVerticalSingleComponent implements OnInit {
 
+
+  @Input() tagPerformanceDetails: any;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  tagPerformanceDetails: any[] = [
-    {
-      name: 'tag1',
-      percentagePerformance: '10'
-    },
-    {
-      name: 'tag2',
-      percentagePerformance: '20'
-    },
-    {
-      name: 'tag3',
-      percentagePerformance: '50'
-    },
-    {
-      name: 'tag4',
-      percentagePerformance: '30'
-    },
-    {
-      name: 'tag5',
-      percentagePerformance: '100'
-    },
-    {
-      name: 'tag6',
-      percentagePerformance: '20'
-    },
 
-  ];
 
 }

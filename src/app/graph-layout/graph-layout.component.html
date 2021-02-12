@@ -3,17 +3,19 @@
 
         <!-- Single Vertical progress bar  -->
         <div class="mt-5">
-            <app-bargraph-vertical-single></app-bargraph-vertical-single>
+            <app-bargraph-vertical-single [tagPerformanceDetails]="tagPerformanceDetails">
+            </app-bargraph-vertical-single>
         </div>
 
         <!-- Multiple vertical progress bar -->
         <div class="mt-5">
-            <app-bargraph-vertical-multiple></app-bargraph-vertical-multiple>
+            <app-bargraph-vertical-multiple [studentPerformanceDetails]="studentPerformanceDetails">
+            </app-bargraph-vertical-multiple>
         </div>
 
         <!-- Horizontal progress bar  -->
         <div class="mt-5">
-            <app-bargraph-horizontal></app-bargraph-horizontal>
+            <app-bargraph-horizontal [classPerformanceDetails]="classPerformanceDetails"></app-bargraph-horizontal>
         </div>
 
         <!-- Single circular progress bar -->
