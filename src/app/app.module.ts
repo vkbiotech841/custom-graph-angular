@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BarGraphComponent } from './bar-graph/bar-graph.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarGraphComponent
   ],
   imports: [
     BrowserModule,
