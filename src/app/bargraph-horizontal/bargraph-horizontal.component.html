@@ -1,0 +1,41 @@
+<!-- custom horizontal bar graph -->
+<div class="col-12 custom-card-header">
+    <div class="card graph-card" style="background: #cfe9f3;">
+        <div class="d-flex" style="justify-content: space-between;">
+            <div>
+                Class performance
+            </div>
+            <div class="d-flex" style="padding-right: 5%;">
+                <div>
+                    <img src="assets/my_school/three_dots.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4"
+            style="background:#EAF4F8; border-radius: 10px;filter: drop-shadow(0px 0px 21px #A8CEDD);">
+
+            <div *ngFor="let classPerformance of classPerformanceDetails"
+                style="padding-left: 2%; padding-right: 2%; padding-bottom: 1%; padding-top: 1%;">
+                <div class="d-flex" style="justify-content: space-between;">
+                    <div>
+                        <small>
+                            {{classPerformance.subject | titlecase}}
+                        </small>
+                    </div>
+                    <div>
+                        <small>
+                            {{classPerformance.studenAboveAverage}} of {{classPerformance.totalStudent}}
+                            students
+                            above average
+                        </small>
+                    </div>
+                </div>
+                <div class="progress-container-horizontal" id="progress-container" style="margin-top: 1px">
+                    <div class="progress-horizontal" [style.width.%]="classPerformance.percentageOfStudentAboveAverage">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

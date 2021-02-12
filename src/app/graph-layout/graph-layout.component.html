@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="container-fluid">
+
+        <!-- Single Vertical progress bar  -->
+        <div class="mt-5">
+            <app-bargraph-vertical-single></app-bargraph-vertical-single>
+        </div>
+
+        <!-- Multiple vertical progress bar -->
+        <div class="mt-5">
+            <app-bargraph-vertical-multiple></app-bargraph-vertical-multiple>
+        </div>
+
+        <!-- Horizontal progress bar  -->
+        <div class="mt-5">
+            <app-bargraph-horizontal></app-bargraph-horizontal>
+        </div>
+
+        <!-- Single circular progress bar -->
+        <div class="mt-5">
+            <app-circular-progressbar [value]="circularProgressValueForSingle"></app-circular-progressbar>
+        </div>
+
+        <!-- Multiple circular progress bar -->
+        <div class="card-body mt-5">
+            <div class="row d-flex">
+                <div>
+                    <app-circular-progressbar-multiple [value]="circularProgressbarDesignObject1.circularProgressValue"
+                        [circularProgressbarDesignObject]="circularProgressbarDesignObject1">
+                    </app-circular-progressbar-multiple>
+                </div>
+
+                <div>
+                    <app-circular-progressbar-multiple [value]="circularProgressbarDesignObject2.circularProgressValue"
+                        [circularProgressbarDesignObject]="circularProgressbarDesignObject2">
+                    </app-circular-progressbar-multiple>
+                </div>
+                `
+                <div>
+                    <app-circular-progressbar-multiple [value]="circularProgressbarDesignObject3.circularProgressValue"
+                        [circularProgressbarDesignObject]="circularProgressbarDesignObject3">
+                    </app-circular-progressbar-multiple>
+
+                </div>
+
+                <div>
+                    <app-circular-progressbar-multiple [value]="circularProgressbarDesignObject4.circularProgressValue"
+                        [circularProgressbarDesignObject]="circularProgressbarDesignObject4">
+                    </app-circular-progressbar-multiple>
+                </div>
+
+                <div>
+                    <app-circular-progressbar-multiple [value]="circularProgressbarDesignObject5.circularProgressValue"
+                        [circularProgressbarDesignObject]="circularProgressbarDesignObject5">
+                    </app-circular-progressbar-multiple>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

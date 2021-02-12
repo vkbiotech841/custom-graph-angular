@@ -1,0 +1,89 @@
+<!-- custom multiple bar graph -->
+<div class="col-12 custom-card-header">
+    <div class="card graph-card" style="background: #cfe9f3;">
+        <div class="d-flex" style="justify-content: space-between;">
+            <div>
+                Rank wise student performance
+            </div>
+            <div class="d-flex" style="padding-right: 5%;">
+                <div class="btn select-tag-container">
+                    <select>
+                        <option value="0">Select Subject</option>
+                        <option value="1">English</option>
+                        <option value="2">Hindi</option>
+                    </select>
+                </div>
+                <div>
+                    <img src="assets/my_school/three_dots.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4"
+            style="background:#EAF4F8; border-radius: 10px;filter: drop-shadow(0px 0px 21px #A8CEDD);">
+
+            <div class="d-flex tagPerformance-container m-4" style="justify-content: space-around;">
+                <div *ngFor="let studentPerformance of studentPerformanceDetails">
+                    <div class="d-flex" style="flex-direction: column; align-items: center;">
+                        <div class="d-flex">
+                            <div class="progress-container"
+                                *ngFor="let subject of studentPerformance.subjects;let i = index"
+                                style="margin-right: 30% !important; margin-left: 30%;">
+                                <div class="progress" [style.height.%]="subject.percentagePerformance"
+                                    [ngClass]="{'color-1': i === 0, 'color-2': i === 1,'color-3': i === 2 }">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-left: 70%;">
+                            <strong>
+                                <small>{{studentPerformance.studentName | titlecase}}</small>
+                                <br>
+                                <small>{{studentPerformance.rollNumber}}</small>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <hr class="horizotal-line-0">
+                <hr class="horizotal-line-20">
+                <hr class="horizotal-line-40">
+                <hr class="horizotal-line-60">
+                <hr class="horizotal-line-80">
+                <hr class="horizotal-line-100">
+                <small class="x-axis-label-0">0%</small>
+                <small class="x-axis-label-20">20%</small>
+                <small class="x-axis-label-40">40%</small>
+                <small class="x-axis-label-60">60%</small>
+                <small class="x-axis-label-80">80%</small>
+                <small class="x-axis-label-100">100%</small>
+            </div>
+
+            <div class="col-12 col-md-5 col-md-6" style="margin-bottom: 2%;margin-left: 2%;">
+                <div class="d-flex" style="justify-content: space-evenly;">
+                    <div class="d-flex" style="width: 100%;">
+                        <div class="progress-label" style="width: 25%; background: #4281a4 !important;">
+                        </div>
+                        <div style="margin-top: -5%; margin-left: 1%;">
+                            <small>Mathematics</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex" style="width: 100%;">
+                        <div class="progress-label" style="width: 25%;  background: #2c2738 !important;">
+                        </div>
+                        <div style="margin-top: -5%; margin-left: 1%;">
+                            <small>English</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex" style="width: 100%;">
+                        <div class="progress-label" style="width: 25%; background: #789497 !important;">
+                        </div>
+                        <div style="margin-top: -5%; margin-left: 1%;">
+                            <small>Science</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

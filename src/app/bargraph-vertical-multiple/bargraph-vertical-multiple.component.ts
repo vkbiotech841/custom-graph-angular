@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-bar-graph',
-  templateUrl: './bar-graph.component.html',
-  styleUrls: ['./bar-graph.component.scss']
+  selector: 'app-bargraph-vertical-multiple',
+  templateUrl: './bargraph-vertical-multiple.component.html',
+  styleUrls: ['./bargraph-vertical-multiple.component.scss']
 })
-export class BarGraphComponent implements OnInit {
+export class BargraphVerticalMultipleComponent implements OnInit {
 
   constructor() { }
 
@@ -124,70 +124,5 @@ export class BarGraphComponent implements OnInit {
       ]
     },
   ];
-
-
-  classPerformanceDetails: any[] = [
-    {
-      subject: 'mathematics',
-      totalStudent: '40',
-      studenAboveAverage: '20',
-      percentageOfStudentAboveAverage: '50'
-    },
-    {
-      subject: 'science',
-      totalStudent: '40',
-      studenAboveAverage: '30',
-      percentageOfStudentAboveAverage: '75'
-    },
-    {
-      subject: 'english',
-      totalStudent: '40',
-      studenAboveAverage: '10',
-      percentageOfStudentAboveAverage: '25'
-    },
-    {
-      subject: 'history',
-      totalStudent: '40',
-      studenAboveAverage: '40',
-      percentageOfStudentAboveAverage: '100'
-    },
-    {
-      subject: 'geography',
-      totalStudent: '40',
-      studenAboveAverage: '10',
-      percentageOfStudentAboveAverage: '50'
-    },
-  ];
-
-  tagPerformanceDetails: any[] = [
-    {
-      name: 'tag1',
-      percentagePerformance: '10'
-    },
-    {
-      name: 'tag2',
-      percentagePerformance: '20'
-    },
-    {
-      name: 'tag3',
-      percentagePerformance: '50'
-    },
-    {
-      name: 'tag4',
-      percentagePerformance: '30'
-    },
-    {
-      name: 'tag5',
-      percentagePerformance: '100'
-    },
-    {
-      name: 'tag6',
-      percentagePerformance: '20'
-    },
-
-  ];
-
-
-  percentageTimeEllapsed = 50;
 
 }

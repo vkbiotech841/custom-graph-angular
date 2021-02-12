@@ -1,0 +1,54 @@
+<!-- custom single bar graph -->
+<div class="col-12 custom-card-header">
+    <div class="card graph-card" style="background: #cfe9f3;">
+        <div class="d-flex" style="justify-content: space-between;">
+            <div>
+                Tag wise performance
+            </div>
+            <div class="d-flex" style="padding-right: 5%;">
+                <div class="btn select-tag-container">
+                    <select>
+                        <option value="0">Select Subject</option>
+                        <option value="1">English</option>
+                        <option value="2">Hindi</option>
+                    </select>
+                </div>
+                <div>
+                    <img src="assets/my_school/three_dots.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4"
+            style="background:#EAF4F8; border-radius: 10px;filter: drop-shadow(0px 0px 21px #A8CEDD);">
+
+            <div class="d-flex tagPerformance-container m-4" style="justify-content: space-around;">
+                <div *ngFor="let tagPerformance of tagPerformanceDetails">
+                    <div class="d-flex" style="flex-direction: column; align-items: center;">
+                        <div class="progress-container">
+                            <div class="progress" [style.height.%]="tagPerformance.percentagePerformance">
+                            </div>
+                        </div>
+                        <div>
+                            <strong>
+                                <small>{{tagPerformance.name}}</small>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <hr class="horizotal-line-0">
+                <hr class="horizotal-line-20">
+                <hr class="horizotal-line-40">
+                <hr class="horizotal-line-60">
+                <hr class="horizotal-line-80">
+                <hr class="horizotal-line-100">
+                <small class="x-axis-label-0">0%</small>
+                <small class="x-axis-label-20">20%</small>
+                <small class="x-axis-label-40">40%</small>
+                <small class="x-axis-label-60">60%</small>
+                <small class="x-axis-label-80">80%</small>
+                <small class="x-axis-label-100">100%</small>
+            </div>
+
+        </div>
+    </div>
+</div>

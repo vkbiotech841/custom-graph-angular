@@ -1,0 +1,22 @@
+<div class="circular-graph">
+    <svg class="progress__svg" width="200" height="200" viewBox="-20 -20 160 160">
+
+        <circle class="progress__meter" cx="60" cy="60" [attr.r]="radius" stroke-width="5"
+            [style.stroke]="circularProgressbarDesignObject.stroke_meter" />
+
+        <circle class="progress__value" [style.strokeDasharray]="circumference" [style.strokeDashoffset]="dashoffset"
+            cx="60" cy="60" [attr.r]="radius" stroke-width="8"
+            [style.stroke]="circularProgressbarDesignObject.stroke_value" />
+    </svg>
+
+    <div class="progress__value-text">
+        <span class="row text-center inside-text">
+            <strong>
+                {{value | number:'2.1-1'}}% <br>
+                <span
+                    [style.color]="circularProgressbarDesignObject.stroke_value">{{circularProgressbarDesignObject.innerText}}</span>
+            </strong>
+        </span>
+
+    </div>
+</div>
