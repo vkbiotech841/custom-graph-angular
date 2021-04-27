@@ -1,0 +1,54 @@
+.progress {
+  position: relative;
+  height: 100%;
+}
+
+.progress__value-text {
+  position: absolute;
+  top: 60px;
+  // left: 45px;
+  right: 55px;
+  font-size: 12px;
+  color: white;
+}
+
+.progress__svg {
+  transform: rotate(-90deg);
+}
+
+.progress__meter,
+.progress__value {
+  fill: none;
+}
+
+.progress__meter,
+.progress__value2 {
+  fill: none;
+}
+
+.progress__meter {
+  stroke: #f2f2f2;
+}
+
+.progress__value {
+  stroke: #2f80ed;
+  transition: all 100ms;
+}
+
+.progress__value2 {
+  stroke: #f2c94c;
+  transition: all 100ms;
+}
+
+.double-circle {
+  position: relative;
+
+  .outcircle-text {
+    position: absolute;
+  }
+
+  .innercircle-text {
+    position: absolute;
+    top: 15px;
+  }
+}

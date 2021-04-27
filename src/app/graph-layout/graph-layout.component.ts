@@ -191,7 +191,11 @@ export class GraphLayoutComponent implements OnInit {
 
 
   // For Single circular progress bar
-  circularProgressValueForSingle = 70;
+  circularProgressValueForSingle = 50;
+
+  // For Double circular progress bar
+  progressValueForOuterCircle = 80;
+  progressValueForInnerCircle = 50;
 
 
   // For multiple circular progress bars:

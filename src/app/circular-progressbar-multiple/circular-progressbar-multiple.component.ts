@@ -21,6 +21,7 @@ export class CircularProgressbarMultipleComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.value.currentValue !== changes.value.previousValue) {
+      console.log("changes", changes.value);
       this.progress(changes.value.currentValue);
     }
   }

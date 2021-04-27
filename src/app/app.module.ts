@@ -10,6 +10,7 @@ import { BargraphVerticalSingleComponent } from './bargraph-vertical-single/barg
 import { BargraphVerticalMultipleComponent } from './bargraph-vertical-multiple/bargraph-vertical-multiple.component';
 import { GraphLayoutComponent } from './graph-layout/graph-layout.component';
 import { CircularProgressbarMultipleComponent } from './circular-progressbar-multiple/circular-progressbar-multiple.component';
+import { DoubleCircularProgressbarComponent } from './double-circular-progressbar/double-circular-progressbar.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CircularProgressbarMultipleComponent } from './circular-progressbar-mul
     BargraphVerticalMultipleComponent,
     GraphLayoutComponent,
     CircularProgressbarMultipleComponent,
+    DoubleCircularProgressbarComponent,
   ],
   imports: [
     BrowserModule,

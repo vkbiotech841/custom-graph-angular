@@ -30,6 +30,7 @@ export class CircularProgressbarComponent implements OnInit, OnChanges {
   private progress(value: number) {
     const progress = value / 100;
     this.dashoffset = this.circumference * (1 - progress);
+    console.log("value", value, "progress", progress, "dashoffset", this.dashoffset);
   }
 
 }
